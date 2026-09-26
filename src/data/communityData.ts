@@ -31,7 +31,7 @@ export const COMMUNITY_EVENTS: CommunityEvent[] = [
     description: 'A Maah\'s e mais de 60 jogadores uniram forças no The End para derrotar a versão modificada do Dragão.',
     location: 'Dimensão do Fim',
     rewardsNote: 'Concluído com sucesso com gravação de vídeo especial!',
-    bannerUrl: './maah.png',
+    bannerUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&auto=format&fit=crop&q=80',
     status: 'completed'
   }
 ];
@@ -41,7 +41,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     name: "Maah's",
     role: 'Criadora, Artista & Host do Servidor',
     badgeColor: 'from-fuchsia-500 to-pink-500 text-fuchsia-100',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80',
+    avatar: './maah.png',
     social: 'https://twitch.tv/maahs'
   },
   {
