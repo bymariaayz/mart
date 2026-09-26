@@ -1,0 +1,117 @@
+import { PortfolioItem } from '../types';
+
+export const PORTFOLIO_ITEMS: PortfolioItem[] = [
+  {
+    id: 'port-1',
+    title: 'Santuário de Aetheria - Spawn Monumental',
+    category: 'minecraft',
+    categoryLabel: 'Minecraft',
+    description: 'Construção autoral de spawn temático com ilhas flutuantes, cristais mágicos de ametista, portais rúnicos e caminhos orgânicos acolhedores projetados para o servidor.',
+    imageUrl: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1000&auto=format&fit=crop&q=80',
+    aspectRatio: '16/9',
+    author: "Maah's",
+    date: 'Fevereiro de 2025',
+    toolsUsed: ['WorldEdit', 'Axiom Toolset', 'Chunky Render', 'Minecraft 1.21'],
+    tags: ['Spawn', 'RPG', 'Fantasy', 'Build'],
+    featured: true
+  },
+  {
+    id: 'port-2',
+    title: 'Guardião Celestial - Pintura Digital',
+    category: 'arte',
+    categoryLabel: 'Arte Digital',
+    description: 'Ilustração estilizada de um guerreiro alado empunhando uma lâmina forjada com luz estelar. Foco em iluminação volumétrica, partículas cósmicas e contraste atmosférico.',
+    imageUrl: 'https://images.unsplash.com/photo-1563089145-599997674d42?w=1000&auto=format&fit=crop&q=80',
+    aspectRatio: '4/3',
+    author: "Maah's",
+    date: 'Janeiro de 2025',
+    toolsUsed: ['Clip Studio Paint', 'Photoshop', 'Mesa Wacom'],
+    tags: ['Ilustração', 'Character Art', 'Pintura Digital'],
+    featured: true
+  },
+  {
+    id: 'port-3',
+    title: 'Coleção de Emotes e Insígnias Cósmicas',
+    category: 'pixel-art',
+    categoryLabel: 'Pixel Art',
+    description: 'Conjunto de 12 insígnias de sub e emotes animados em grade de 32x32 pixels, explorando tons de roxo néon, ciano e ouro astral para canais da Twitch.',
+    imageUrl: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1000&auto=format&fit=crop&q=80',
+    aspectRatio: '1/1',
+    author: "Maah's",
+    date: 'Janeiro de 2025',
+    toolsUsed: ['Aseprite', 'Photoshop'],
+    tags: ['Emotes', 'Twitch', 'Pixel Art', 'Badges'],
+    featured: true
+  },
+  {
+    id: 'port-4',
+    title: 'Identidade Visual & Overlays para Streamer',
+    category: 'design',
+    categoryLabel: 'Design',
+    description: 'Design completo de marca e kit de stream para criador de conteúdo gamer, incluindo logotipo dinâmico, telas animadas de início e moldura modular de webcam.',
+    imageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1000&auto=format&fit=crop&q=80',
+    aspectRatio: '16/9',
+    author: "Maah's",
+    date: 'Fevereiro de 2025',
+    toolsUsed: ['Adobe Illustrator', 'After Effects', 'Figma'],
+    tags: ['Branding', 'Overlays', 'Twitch UI', 'Logo'],
+    featured: true
+  },
+  {
+    id: 'port-5',
+    title: 'Set de Armaduras & Espadas 3D (Blockbench)',
+    category: 'minecraft',
+    categoryLabel: 'Minecraft',
+    description: 'Modelagem 3D low-poly e texturização manual de 4 conjuntos de armaduras mágicas e 8 armas com efeitos emissivos para servidor de RPG.',
+    imageUrl: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1000&auto=format&fit=crop&q=80',
+    aspectRatio: '16/9',
+    author: "Maah's",
+    date: 'Janeiro de 2025',
+    toolsUsed: ['Blockbench', 'Photoshop', 'ItemsAdder'],
+    tags: ['3D Models', 'ItemsAdder', 'Custom Weapons'],
+    featured: false
+  },
+  {
+    id: 'port-6',
+    title: 'Avatar Ilustrado de Skin Minecraft',
+    category: 'arte',
+    categoryLabel: 'Arte Digital',
+    description: 'Transformação de uma skin de Minecraft em avatar ilustrado com traço anime/fantasia, iluminação mágica e fundo translúcido.',
+    imageUrl: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=1000&auto=format&fit=crop&q=80',
+    aspectRatio: '1/1',
+    author: "Maah's",
+    date: 'Fevereiro de 2025',
+    toolsUsed: ['Procreate', 'Photoshop'],
+    tags: ['Avatar', 'Skin Art', 'Anime Style'],
+    featured: false
+  },
+  {
+    id: 'port-7',
+    title: 'Kit de Ícones para HUD e Inventário Customizado',
+    category: 'pixel-art',
+    categoryLabel: 'Pixel Art',
+    description: 'Interface de usuário pixelada com botões, caixas de diálogo, barras de vida personalizadas e ícones de poções mágicas.',
+    imageUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1000&auto=format&fit=crop&q=80',
+    aspectRatio: '4/3',
+    author: "Maah's",
+    date: 'Dezembro de 2024',
+    toolsUsed: ['Aseprite'],
+    tags: ['GUI', 'HUD', 'Custom Texture'],
+    featured: false
+  },
+  {
+    id: 'port-8',
+    title: 'Pôster Promocional & Key Visual para Evento',
+    category: 'design',
+    categoryLabel: 'Design',
+    description: 'Composição gráfica em alta resolução para divulgação do grande torneio de construção e maratona de lives da comunidade.',
+    imageUrl: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1000&auto=format&fit=crop&q=80',
+    aspectRatio: '16/9',
+    author: "Maah's",
+    date: 'Fevereiro de 2025',
+    toolsUsed: ['Adobe Illustrator', 'Photoshop'],
+    tags: ['Pôster', 'Evento', 'Key Visual'],
+    featured: false
+  }
+];
+
