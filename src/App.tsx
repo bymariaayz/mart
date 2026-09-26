@@ -27,7 +27,7 @@ import { PORTFOLIO_ITEMS } from './data/portfolioData';
 export function AppContent() {
   const [currentRoute, setCurrentRoute] = useState<PageRoute>('home');
   const [routeParams, setRouteParams] = useState<Record<string, string>>({});
-  
+
   // Modals & Lightbox state
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [activeLightboxItemId, setActiveLightboxItemId] = useState<string | null>(null);
@@ -96,15 +96,13 @@ export function AppContent() {
   const navigateTo = (route: PageRoute, params?: Record<string, string>) => {
     setCurrentRoute(route);
     setRouteParams(params || {});
-    
-    // Update window hash
+
     let hashUrl = `#/${route}`;
     if (params && Object.keys(params).length > 0) {
       const sp = new URLSearchParams(params);
       hashUrl += `?${sp.toString()}`;
     }
     window.location.hash = hashUrl;
-
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -119,18 +117,15 @@ export function AppContent() {
     : null;
 
   return (
-    <div className="min-h-screen bg-[#060911] text-slate-100 flex flex-col relative font-sans antialiased selection:bg-emerald-500 selection:text-slate-950">
-      {/* Dynamic Background */}
+    <div className="min-h-screen bg-[#120814] text-slate-100 flex flex-col relative font-sans antialiased selection:bg-pink-500 selection:text-white">
       <ParticlesBackground />
 
-      {/* Global Navbar */}
       <Navbar
         currentRoute={currentRoute}
         onNavigate={navigateTo}
         onOpenSearch={() => setIsSearchOpen(true)}
       />
 
-      {/* Main Page Container */}
       <div className="flex-1 pt-24 sm:pt-28 relative z-10">
         {currentRoute === 'home' && (
           <HomePage
@@ -194,28 +189,23 @@ export function AppContent() {
         ].includes(currentRoute) && <NotFoundPage onNavigate={navigateTo} />}
       </div>
 
-      {/* Global Footer */}
       <Footer onNavigate={navigateTo} />
 
-      {/* Utilities */}
       <ScrollToTop />
       <ToastContainer />
 
-      {/* Search Modal */}
       <GlobalSearchModal
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
         onNavigate={navigateTo}
       />
 
-      {/* Lightbox for Portfolio Gallery */}
       <PortfolioLightbox
         item={activePortfolioItem}
         onClose={() => setActiveLightboxItemId(null)}
         onRequestSimilarService={handleOpenOrderModal}
       />
 
-      {/* Order Quote / Commission Brief Modal */}
       <OrderQuoteModal
         isOpen={isOrderModalOpen}
         onClose={() => setIsOrderModalOpen(false)}
