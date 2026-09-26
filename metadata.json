@@ -1,0 +1,6 @@
+{
+  "name": "Maah's | Artes Digitais, Portfólio, Lives & Minecraft",
+  "description": "Portal oficial da Maah's: solicitação de artes e design para lives, portfólio criativo, transmissões ao vivo, comunidade Discord e servidor de Minecraft.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
