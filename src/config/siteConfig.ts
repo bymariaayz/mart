@@ -2,8 +2,8 @@ import { ServerConfig, SocialLinks } from '../types';
 
 export const SITE_CONFIG = {
   // Identidade da Criadora
-  name: "Maah's",
-  creatorName: "Maah's",
+  name: "Maria",
+  creatorName: "Maria",
   creatorTitle: "Artista Digital, Designer & Streamer",
   shortName: "Maah's",
   tagline: "Artes Digitais, Comissões, Lives & Servidor de Minecraft",
