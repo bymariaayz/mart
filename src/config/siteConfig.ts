@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   shortName: "Maah's",
   tagline: "Artes Digitais, Comissões, Lives & Servidor de Minecraft",
   description: "Portfólio e loja oficial da Maah's: solicite artes digitais, design para streams, emotes em pixel art, acompanhe lives ao vivo, entre na nossa comunidade do Discord e jogue no meu servidor de Minecraft!",
-  avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+  avatarUrl: "./maah.png",
   bannerImage: "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80",
   foundedYear: 2024,
   
