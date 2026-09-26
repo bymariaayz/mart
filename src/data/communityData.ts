@@ -31,7 +31,7 @@ export const COMMUNITY_EVENTS: CommunityEvent[] = [
     description: 'A Maah\'s e mais de 60 jogadores uniram forças no The End para derrotar a versão modificada do Dragão.',
     location: 'Dimensão do Fim',
     rewardsNote: 'Concluído com sucesso com gravação de vídeo especial!',
-    bannerUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&auto=format&fit=crop&q=80',
+    bannerUrl: './maah.png',
     status: 'completed'
   }
 ];
