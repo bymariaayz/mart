@@ -117,7 +117,7 @@ export function AppContent() {
     : null;
 
   return (
-    <div className="min-h-screen bg-[#120814] text-slate-100 flex flex-col relative font-sans antialiased selection:bg-pink-500 selection:text-white">
+    <div className="min-h-screen bg-[#120814] text-slate-100 flex flex-col relative font-sans antialiased selection:bg-purple-500 selection:text-white">
       <ParticlesBackground />
 
       <Navbar

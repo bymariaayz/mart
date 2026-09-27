@@ -9,8 +9,11 @@
   --maah-pink-strong: #ec4899;
   --maah-purple: #a855f7;
   --maah-purple-strong: #7c3aed;
+  --maah-blue: #3b82f6;
+  --maah-blue-strong: #2563eb;
   --maah-lavender: #e9d5ff;
   --maah-border: rgba(216, 180, 254, 0.2);
+  --maah-font: 'Times New Roman', Times, serif;
 }
 
 html {
@@ -18,8 +21,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Fonte padrão de todo o site: Times New Roman, sobrescrevendo
+   qualquer classe de fonte definida nos componentes (Outfit, mono, etc). */
+*, *::before, *::after {
+  font-family: var(--maah-font) !important;
+}
+
 body {
   min-height: 100vh;
+  font-family: var(--maah-font);
   background:
     radial-gradient(circle at top, rgba(236, 72, 153, 0.2), transparent 34%),
     radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.18), transparent 33%),
