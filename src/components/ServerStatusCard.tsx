@@ -164,7 +164,7 @@ export const ServerStatusCard: React.FC<ServerStatusCardProps> = ({ compact = fa
         {/* Bar */}
         <div className="w-full h-2.5 rounded-full bg-slate-800/80 overflow-hidden p-0.5 border border-slate-700/40">
           <div
-            className="h-full rounded-full bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-400 transition-all duration-500 shadow-sm shadow-emerald-500/50"
+            className="h-full rounded-full bg-gradient-to-r from-emerald-500 via-teal-400 to-blue-400 transition-all duration-500 shadow-sm shadow-emerald-500/50"
             style={{ width: `${Math.max(percentage, 5)}%` }}
           />
         </div>
@@ -176,7 +176,7 @@ export const ServerStatusCard: React.FC<ServerStatusCardProps> = ({ compact = fa
         <div className="p-3.5 rounded-xl bg-[#141d30]/70 border border-slate-700/50 flex flex-col justify-between gap-2.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-300">
-              <Monitor className="w-3.5 h-3.5 text-cyan-400" />
+              <Monitor className="w-3.5 h-3.5 text-blue-400" />
               <span>Java Edition</span>
             </div>
             <span className="text-[10px] text-slate-400 font-mono">Porta: 25565</span>
@@ -200,22 +200,22 @@ export const ServerStatusCard: React.FC<ServerStatusCardProps> = ({ compact = fa
         <div className="p-3.5 rounded-xl bg-[#141d30]/70 border border-slate-700/50 flex flex-col justify-between gap-2.5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-300">
-              <Smartphone className="w-3.5 h-3.5 text-purple-400" />
+              <Smartphone className="w-3.5 h-3.5 text-blue-400" />
               <span>Bedrock / Mobile</span>
             </div>
-            <span className="text-[10px] text-purple-300 font-mono">Porta: {SITE_CONFIG.server.bedrockPort || 19132}</span>
+            <span className="text-[10px] text-blue-300 font-mono">Porta: {SITE_CONFIG.server.bedrockPort || 19132}</span>
           </div>
 
           <div className="flex items-center justify-between gap-2">
-            <span className="font-mono text-xs font-bold text-purple-300 truncate select-all">
+            <span className="font-mono text-xs font-bold text-blue-300 truncate select-all">
               {SITE_CONFIG.server.bedrockIp || SITE_CONFIG.server.ip}
             </span>
             <button
               onClick={handleCopyBedrock}
-              className="p-1.5 rounded-lg bg-purple-500/10 hover:bg-purple-500/20 text-purple-400 border border-purple-500/30 transition-all active:scale-95 cursor-pointer shrink-0"
+              className="p-1.5 rounded-lg bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 border border-pink-500/30 transition-all active:scale-95 cursor-pointer shrink-0"
               title="Copiar IP e Porta Bedrock"
             >
-              {copiedBedrock ? <Check className="w-3.5 h-3.5 text-purple-300" /> : <Copy className="w-3.5 h-3.5" />}
+              {copiedBedrock ? <Check className="w-3.5 h-3.5 text-pink-300" /> : <Copy className="w-3.5 h-3.5" />}
             </button>
           </div>
         </div>

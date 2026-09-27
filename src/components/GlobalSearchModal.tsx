@@ -220,10 +220,10 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
                     <div className="flex items-start gap-3 min-w-0">
                       <div className="p-2 rounded-lg bg-slate-900 border border-slate-800 text-emerald-400 mt-0.5 shrink-0">
                         {item.type === 'wiki' && <BookOpen className="w-4 h-4 text-emerald-400" />}
-                        {item.type === 'servico' && <Wrench className="w-4 h-4 text-cyan-400" />}
+                        {item.type === 'servico' && <Wrench className="w-4 h-4 text-purple-400" />}
                         {item.type === 'noticia' && <Newspaper className="w-4 h-4 text-amber-400" />}
                         {item.type === 'live' && <Tv className="w-4 h-4 text-purple-400" />}
-                        {item.type === 'portfolio' && <Image className="w-4 h-4 text-pink-400" />}
+                        {item.type === 'portfolio' && <Image className="w-4 h-4 text-purple-400" />}
                       </div>
                       <div className="min-w-0">
                         <div className="flex items-center gap-2">

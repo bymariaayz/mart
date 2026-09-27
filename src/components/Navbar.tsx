@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-[#120814]/90 backdrop-blur-xl border-b border-pink-500/15 shadow-xl shadow-fuchsia-950/40 py-2.5'
+          ? 'bg-[#120814]/90 backdrop-blur-xl border-b border-purple-500/15 shadow-xl shadow-purple-950/40 py-2.5'
           : 'bg-transparent py-4'
       }`}
     >
@@ -54,17 +54,17 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
           onClick={() => handleNavClick('home')}
           className="flex items-center gap-2.5 cursor-pointer group shrink-0"
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-fuchsia-500 via-pink-500 to-violet-500 p-0.5 shadow-lg shadow-fuchsia-950/50 group-hover:scale-105 transition-transform">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-500 via-purple-500 to-purple-500 p-0.5 shadow-lg shadow-purple-950/50 group-hover:scale-105 transition-transform">
             <div className="w-full h-full bg-[#120814] rounded-[10px] flex items-center justify-center">
-              <span className="text-fuchsia-300 font-black text-lg font-['Outfit']">m</span>
+              <span className="text-purple-300 font-black text-lg font-['Outfit']">m</span>
             </div>
           </div>
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="font-extrabold text-white text-base tracking-tight font-['Outfit'] group-hover:text-pink-300 transition-colors">
+              <span className="font-extrabold text-white text-base tracking-tight font-['Outfit'] group-hover:text-purple-300 transition-colors">
                 {SITE_CONFIG.shortName}
               </span>
-              <span className="text-[10px] px-1.5 py-0.2 rounded bg-pink-500/20 text-pink-200 font-mono border border-pink-500/30 font-bold">
+              <span className="text-[10px] px-1.5 py-0.2 rounded bg-purple-500/20 text-purple-200 font-mono border border-purple-500/30 font-bold">
                 ART & MINE
               </span>
             </div>
@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
           </div>
         </div>
 
-        <nav className="hidden lg:flex items-center gap-1 bg-slate-900/60 p-1 rounded-2xl border border-pink-500/15 backdrop-blur-md">
+        <nav className="hidden lg:flex items-center gap-1 bg-slate-900/60 p-1 rounded-2xl border border-purple-500/15 backdrop-blur-md">
           {navLinks.map((link) => {
             const Icon = link.icon;
             const isActive = currentRoute === link.route;
@@ -84,7 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
                 onClick={() => handleNavClick(link.route)}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
                   isActive
-                    ? 'bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white shadow-md shadow-fuchsia-950/40'
+                    ? 'bg-gradient-to-r from-pink-500 to-pink-500 text-white shadow-md shadow-pink-950/40'
                     : 'text-slate-300 hover:text-white hover:bg-slate-800/50'
                 }`}
               >
@@ -112,7 +112,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
             href={SITE_CONFIG.socials.discord}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-fuchsia-600 to-violet-600 hover:from-fuchsia-500 hover:to-violet-500 text-white font-bold text-xs shadow-lg shadow-fuchsia-950/20 active:scale-95 transition-all"
+            className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-pink-600 to-pink-600 hover:from-pink-500 hover:to-pink-500 text-white font-bold text-xs shadow-lg shadow-pink-950/20 active:scale-95 transition-all"
           >
             <MessageSquare className="w-4 h-4" />
             <span>Discord</span>
@@ -129,7 +129,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
       </div>
 
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[60px] bg-[#120814]/98 border-b border-pink-500/15 backdrop-blur-2xl shadow-2xl p-5 max-h-[85vh] overflow-y-auto space-y-4">
+        <div className="lg:hidden fixed inset-x-0 top-[60px] bg-[#120814]/98 border-b border-purple-500/15 backdrop-blur-2xl shadow-2xl p-5 max-h-[85vh] overflow-y-auto space-y-4">
           <button
             onClick={() => {
               setMobileMenuOpen(false);
@@ -156,7 +156,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
                   onClick={() => handleNavClick(link.route)}
                   className={`flex items-center gap-2.5 p-3 rounded-xl text-xs font-semibold transition-all text-left ${
                     isActive
-                      ? 'bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white shadow-md'
+                      ? 'bg-gradient-to-r from-pink-500 to-pink-500 text-white shadow-md'
                       : 'bg-slate-900/70 border border-slate-800/80 text-slate-300 hover:text-white hover:bg-slate-800'
                   }`}
                 >
@@ -172,7 +172,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
               href={SITE_CONFIG.socials.discord}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 p-3 rounded-xl bg-gradient-to-r from-fuchsia-600 to-violet-600 text-white font-bold text-xs shadow-md"
+              className="flex items-center justify-center gap-2 p-3 rounded-xl bg-gradient-to-r from-pink-600 to-pink-600 text-white font-bold text-xs shadow-md"
             >
               <MessageSquare className="w-4 h-4" />
               <span>Entrar no Discord Oficial</span>

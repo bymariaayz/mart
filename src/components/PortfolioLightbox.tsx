@@ -69,7 +69,7 @@ export const PortfolioLightbox: React.FC<PortfolioLightboxProps> = ({
                 <span>Autor: <strong className="text-slate-200">{item.author}</strong></span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Calendar className="w-4 h-4 text-purple-400" />
+                <Calendar className="w-4 h-4 text-pink-400" />
                 <span>Data: <strong className="text-slate-200">{item.date}</strong></span>
               </div>
             </div>
@@ -77,14 +77,14 @@ export const PortfolioLightbox: React.FC<PortfolioLightboxProps> = ({
             {/* Tools Used */}
             <div>
               <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2 flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                <Sparkles className="w-3.5 h-3.5 text-pink-400" />
                 <span>Ferramentas & Softwares Utilizados</span>
               </h4>
               <div className="flex flex-wrap gap-2">
                 {item.toolsUsed.map((tool, idx) => (
                   <span
                     key={idx}
-                    className="px-2.5 py-1 rounded-lg text-xs font-mono bg-slate-800/80 text-cyan-300 border border-slate-700"
+                    className="px-2.5 py-1 rounded-lg text-xs font-mono bg-slate-800/80 text-pink-300 border border-slate-700"
                   >
                     {tool}
                   </span>

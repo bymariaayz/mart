@@ -20,13 +20,13 @@ export const ToastContainer: React.FC = () => {
                 ? 'bg-[#0f1d19]/90 border-emerald-500/40 text-emerald-200'
                 : toast.type === 'warning'
                 ? 'bg-[#22160d]/90 border-amber-500/40 text-amber-200'
-                : 'bg-[#111728]/90 border-cyan-500/40 text-cyan-200'
+                : 'bg-[#111728]/90 border-purple-500/40 text-purple-200'
             }`}
           >
             <div className="mt-0.5 shrink-0">
               {toast.type === 'success' && <CheckCircle2 className="w-5 h-5 text-emerald-400" />}
               {toast.type === 'warning' && <AlertTriangle className="w-5 h-5 text-amber-400" />}
-              {toast.type === 'info' && <Info className="w-5 h-5 text-cyan-400" />}
+              {toast.type === 'info' && <Info className="w-5 h-5 text-purple-400" />}
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-semibold text-white tracking-wide">{toast.title}</p>

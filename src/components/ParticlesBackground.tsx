@@ -69,7 +69,7 @@ export const ParticlesBackground: React.FC = () => {
       {/* Background Gradients */}
       <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-emerald-600/10 rounded-full blur-[140px]" />
       <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[130px]" />
-      <div className="absolute top-2/3 left-1/3 w-[450px] h-[450px] bg-cyan-600/10 rounded-full blur-[120px]" />
+      <div className="absolute top-2/3 left-1/3 w-[450px] h-[450px] bg-purple-600/10 rounded-full blur-[120px]" />
       
       {/* Subtle Grid Overlay */}
       <div 
