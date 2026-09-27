@@ -77,15 +77,15 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         <aside className="lg:col-span-3 space-y-6">
-          <div className="p-4 rounded-2xl bg-[#0d1322] border border-pink-500/15 shadow-xl space-y-4">
+          <div className="p-4 rounded-2xl bg-[#0d1322] border border-blue-500/15 shadow-xl space-y-4">
             <div className="relative">
-              <Search className="w-4 h-4 text-pink-400 absolute left-3 top-3" />
+              <Search className="w-4 h-4 text-blue-400 absolute left-3 top-3" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Filtrar artigos..."
-                className="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-900 border border-pink-500/15 text-white text-xs focus:outline-none focus:border-pink-500 transition-colors"
+                className="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-900 border border-blue-500/15 text-white text-xs focus:outline-none focus:border-blue-500 transition-colors"
               />
             </div>
 
@@ -97,7 +97,7 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
                 return (
                   <div key={cat.id} className="space-y-1">
                     <div className="px-2 py-1 text-[11px] font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
-                      <span className="text-pink-400 font-mono">▸</span>
+                      <span className="text-blue-400 font-mono">▸</span>
                       <span>{cat.label}</span>
                     </div>
 
@@ -131,20 +131,20 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
         </aside>
 
         <main className="lg:col-span-6 space-y-8">
-          <article className="p-6 sm:p-10 rounded-3xl bg-[#0c1220]/80 border border-pink-500/15 backdrop-blur-xl shadow-2xl space-y-8">
-            <header className="space-y-4 border-b border-pink-500/15 pb-6">
+          <article className="p-6 sm:p-10 rounded-3xl bg-[#0c1220]/80 border border-blue-500/15 backdrop-blur-xl shadow-2xl space-y-8">
+            <header className="space-y-4 border-b border-blue-500/15 pb-6">
               <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
-                <span className="px-2.5 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-300 font-semibold uppercase tracking-wider text-[10px]">
+                <span className="px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 font-semibold uppercase tracking-wider text-[10px]">
                   {activeArticle.categoryLabel}
                 </span>
 
                 <div className="flex items-center gap-4 text-slate-400 text-xs">
                   <span className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5 text-pink-400" />
+                    <Clock className="w-3.5 h-3.5 text-blue-400" />
                     {activeArticle.readingTimeMinutes} min de leitura
                   </span>
                   <span className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-violet-400" />
+                    <Calendar className="w-3.5 h-3.5 text-blue-400" />
                     Atualizado: {activeArticle.lastUpdated}
                   </span>
                 </div>
@@ -162,9 +162,9 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
                 {activeArticle.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-[11px] font-mono bg-slate-900 border border-pink-500/15 text-slate-400"
+                    className="flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-[11px] font-mono bg-slate-900 border border-blue-500/15 text-slate-400"
                   >
-                    <Tag className="w-3 h-3 text-pink-400" />
+                    <Tag className="w-3 h-3 text-blue-400" />
                     {tag}
                   </span>
                 ))}
@@ -174,7 +174,7 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
             <div className="space-y-10">
               {activeArticle.sections.map((section, sIdx) => (
                 <section key={section.id} id={section.id} className="space-y-4 scroll-mt-24">
-                  <h2 className="text-lg sm:text-xl font-bold text-white font-['Outfit'] border-l-4 border-pink-500 pl-3">
+                  <h2 className="text-lg sm:text-xl font-bold text-white font-['Outfit'] border-l-4 border-blue-500 pl-3">
                     {section.title}
                   </h2>
 
@@ -192,12 +192,12 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
                         return (
                           <div
                             key={cIdx}
-                            className="p-3.5 rounded-2xl bg-[#090d16] border border-pink-500/15 hover:border-pink-500/30 transition-colors space-y-2"
+                            className="p-3.5 rounded-2xl bg-[#090d16] border border-blue-500/15 hover:border-blue-500/30 transition-colors space-y-2"
                           >
                             <div className="flex items-center justify-between gap-3">
                               <div className="flex items-center gap-2 overflow-x-auto">
-                                <Terminal className="w-4 h-4 text-pink-400 shrink-0" />
-                                <code className="font-mono text-pink-300 text-xs sm:text-sm font-semibold select-all">
+                                <Terminal className="w-4 h-4 text-blue-400 shrink-0" />
+                                <code className="font-mono text-blue-300 text-xs sm:text-sm font-semibold select-all">
                                   {cmd.command}
                                 </code>
                               </div>
@@ -216,7 +216,7 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
 
                             {cmd.example && (
                               <p className="text-[11px] text-slate-400 font-mono">
-                                Exemplo: <span className="text-violet-300">{cmd.example}</span>
+                                Exemplo: <span className="text-blue-300">{cmd.example}</span>
                               </p>
                             )}
                           </div>
@@ -234,14 +234,14 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
                             callout.type === 'warning'
                               ? 'bg-amber-950/30 border-amber-500/30 text-amber-200'
                               : callout.type === 'tip'
-                              ? 'bg-pink-950/30 border-pink-500/30 text-pink-200'
-                              : 'bg-violet-950/30 border-violet-500/30 text-violet-200'
+                              ? 'bg-blue-950/30 border-blue-500/30 text-blue-200'
+                              : 'bg-blue-950/30 border-blue-500/30 text-blue-200'
                           }`}
                         >
                           <div className="mt-0.5 shrink-0">
                             {callout.type === 'warning' && <AlertTriangle className="w-5 h-5 text-amber-400" />}
-                            {callout.type === 'tip' && <Sparkles className="w-5 h-5 text-pink-400" />}
-                            {callout.type === 'info' && <Info className="w-5 h-5 text-violet-400" />}
+                            {callout.type === 'tip' && <Sparkles className="w-5 h-5 text-blue-400" />}
+                            {callout.type === 'info' && <Info className="w-5 h-5 text-blue-400" />}
                           </div>
 
                           <div className="space-y-1">
@@ -281,10 +281,10 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
                       {section.subsections.map((sub) => (
                         <div
                           key={sub.id}
-                          className="p-4 rounded-2xl bg-slate-900/60 border border-pink-500/15 space-y-2"
+                          className="p-4 rounded-2xl bg-slate-900/60 border border-blue-500/15 space-y-2"
                         >
                           <h3 className="text-sm font-bold text-white flex items-center gap-2">
-                            <span className="text-pink-400 font-mono">Q:</span>
+                            <span className="text-blue-400 font-mono">Q:</span>
                             <span>{sub.title}</span>
                           </h3>
                           <div className="text-xs text-slate-300 leading-relaxed pl-5 space-y-1">
@@ -300,7 +300,7 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
               ))}
             </div>
 
-            <nav aria-label="Navegação entre artigos" className="pt-8 border-t border-pink-500/15 flex flex-col sm:flex-row items-stretch justify-between gap-4">
+            <nav aria-label="Navegação entre artigos" className="pt-8 border-t border-blue-500/15 flex flex-col sm:flex-row items-stretch justify-between gap-4">
               {prevArticle ? (
                 <button
                   onClick={() => {
@@ -339,9 +339,9 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
         </main>
 
         <aside className="lg:col-span-3 space-y-6">
-          <div className="p-5 rounded-2xl bg-[#0d1322] border border-pink-500/15 shadow-xl space-y-3 sticky top-20">
+          <div className="p-5 rounded-2xl bg-[#0d1322] border border-blue-500/15 shadow-xl space-y-3 sticky top-20">
             <h3 className="text-xs font-bold text-white uppercase tracking-wider font-['Outfit'] flex items-center gap-2">
-              <span className="text-pink-400 font-mono">#</span>
+              <span className="text-blue-400 font-mono">#</span>
               <span>Nesta Página</span>
             </h3>
 
@@ -358,7 +358,7 @@ export const WikiPage: React.FC<WikiPageProps> = ({ initialSlug, onNavigate }) =
             </nav>
 
             {relatedArticles.length > 0 && (
-              <div className="pt-4 mt-4 border-t border-pink-500/15 space-y-2">
+              <div className="pt-4 mt-4 border-t border-blue-500/15 space-y-2">
                 <h4 className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Artigos Relacionados</h4>
                 <div className="space-y-1">
                   {relatedArticles.map((rel) => (

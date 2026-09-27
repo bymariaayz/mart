@@ -100,7 +100,7 @@ export const MinecraftPage: React.FC<MinecraftPageProps> = ({ onNavigate }) => {
               onClick={() => setActiveTab('bedrock')}
               className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                 activeTab === 'bedrock'
-                  ? 'bg-purple-600 text-white shadow-md'
+                  ? 'bg-pink-600 text-white shadow-md'
                   : 'text-slate-400 hover:text-white'
               }`}
             >
@@ -177,15 +177,15 @@ export const MinecraftPage: React.FC<MinecraftPageProps> = ({ onNavigate }) => {
 
           {/* Bedrock Guide */}
           {activeTab === 'bedrock' && (
-            <div className="p-6 sm:p-8 rounded-2xl bg-[#0f172a]/70 border border-purple-500/20 space-y-6">
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#0f172a]/70 border border-blue-500/20 space-y-6">
               <h3 className="text-xl font-bold text-white flex items-center gap-2">
-                <Smartphone className="w-5 h-5 text-purple-400" />
+                <Smartphone className="w-5 h-5 text-blue-400" />
                 <span>Instruções para Minecraft Bedrock (Celular / Win 10 / Consoles)</span>
               </h3>
 
               <ol className="space-y-4 text-sm text-slate-300">
                 <li className="flex items-start gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-purple-500/20 text-purple-400 font-bold text-xs border border-purple-500/30">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-blue-400 font-bold text-xs border border-blue-500/30">
                     1
                   </span>
                   <div>
@@ -197,7 +197,7 @@ export const MinecraftPage: React.FC<MinecraftPageProps> = ({ onNavigate }) => {
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-purple-500/20 text-purple-400 font-bold text-xs border border-purple-500/30">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-blue-400 font-bold text-xs border border-blue-500/30">
                     2
                   </span>
                   <div>
@@ -209,7 +209,7 @@ export const MinecraftPage: React.FC<MinecraftPageProps> = ({ onNavigate }) => {
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-purple-500/20 text-purple-400 font-bold text-xs border border-purple-500/30">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-blue-400 font-bold text-xs border border-blue-500/30">
                     3
                   </span>
                   <div className="w-full space-y-2">
@@ -217,16 +217,16 @@ export const MinecraftPage: React.FC<MinecraftPageProps> = ({ onNavigate }) => {
                     <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 space-y-2 font-mono text-xs">
                       <div className="flex justify-between items-center">
                         <span className="text-slate-400">Endereço do Servidor:</span>
-                        <span className="text-purple-300 font-bold">{SITE_CONFIG.server.bedrockIp || SITE_CONFIG.server.ip}</span>
+                        <span className="text-blue-300 font-bold">{SITE_CONFIG.server.bedrockIp || SITE_CONFIG.server.ip}</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-slate-400">Porta:</span>
-                        <span className="text-purple-300 font-bold">{SITE_CONFIG.server.bedrockPort || 19132}</span>
+                        <span className="text-blue-300 font-bold">{SITE_CONFIG.server.bedrockPort || 19132}</span>
                       </div>
                     </div>
                     <button
                       onClick={handleCopyBedrock}
-                      className="w-full py-2 rounded-xl bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 border border-purple-500/40 text-xs font-semibold transition-all cursor-pointer flex items-center justify-center gap-2"
+                      className="w-full py-2 rounded-xl bg-pink-600/20 hover:bg-pink-600/30 text-pink-300 border border-pink-500/40 text-xs font-semibold transition-all cursor-pointer flex items-center justify-center gap-2"
                     >
                       {copiedBedrock ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
                       <span>{copiedBedrock ? 'Dados Copiados!' : 'Copiar IP e Porta Bedrock'}</span>
@@ -268,7 +268,7 @@ export const MinecraftPage: React.FC<MinecraftPageProps> = ({ onNavigate }) => {
               </div>
               <div className="flex justify-between pt-2">
                 <span className="text-slate-400">Chat de Voz:</span>
-                <span className="text-cyan-400 font-semibold">Simple Voice Chat (Opcional)</span>
+                <span className="text-blue-400 font-semibold">Simple Voice Chat (Opcional)</span>
               </div>
             </div>
           </div>

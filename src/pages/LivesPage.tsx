@@ -111,7 +111,7 @@ export const LivesPage: React.FC<LivesPageProps> = ({ onNavigate }) => {
                   href={streamer.channelUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-purple-950/40 active:scale-95 transition-all"
+                  className="w-full py-3 rounded-xl bg-gradient-to-r from-pink-600 to-pink-600 hover:from-pink-500 hover:to-pink-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-pink-950/40 active:scale-95 transition-all"
                 >
                   <span>Assistir no canal</span>
                   <ExternalLink className="w-4 h-4" />
@@ -155,7 +155,7 @@ export const LivesPage: React.FC<LivesPageProps> = ({ onNavigate }) => {
                 href={s.channelUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-purple-400 hover:text-purple-300 font-semibold flex items-center gap-1"
+                className="text-xs text-pink-400 hover:text-pink-300 font-semibold flex items-center gap-1"
               >
                 <span>Visitar Canal</span>
                 <ExternalLink className="w-3 h-3" />

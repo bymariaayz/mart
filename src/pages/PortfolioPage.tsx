@@ -38,9 +38,9 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
       <Breadcrumbs items={[{ label: 'Portfólio Criativo', active: true }]} onNavigate={onNavigate} />
 
       {/* Header */}
-      <div className="relative rounded-3xl bg-gradient-to-r from-[#0d1c29] via-[#0f172a] to-[#171129] border border-cyan-500/30 p-8 sm:p-12 overflow-hidden shadow-2xl">
+      <div className="relative rounded-3xl bg-gradient-to-r from-[#0d1c29] via-[#0f172a] to-[#171129] border border-pink-500/30 p-8 sm:p-12 overflow-hidden shadow-2xl">
         <div className="max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-300 text-xs font-semibold">
             <ImageIcon className="w-3.5 h-3.5" />
             <span>Galeria Oficial de Criações</span>
           </div>
@@ -66,7 +66,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
               onClick={() => setActiveCategory(cat.id)}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 isActive
-                  ? 'bg-cyan-500 text-slate-950 shadow-md shadow-cyan-950/40'
+                  ? 'bg-pink-500 text-slate-950 shadow-md shadow-pink-950/40'
                   : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
               }`}
             >
@@ -83,7 +83,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
           <div
             key={item.id}
             onClick={() => onOpenLightbox(item.id)}
-            className="group relative rounded-2xl bg-[#0c1220] border border-slate-800 hover:border-cyan-500/40 overflow-hidden cursor-pointer transition-all duration-300 shadow-xl flex flex-col justify-between"
+            className="group relative rounded-2xl bg-[#0c1220] border border-slate-800 hover:border-pink-500/40 overflow-hidden cursor-pointer transition-all duration-300 shadow-xl flex flex-col justify-between"
           >
             {/* Image Box */}
             <div className="relative aspect-video w-full overflow-hidden bg-slate-950">
@@ -96,7 +96,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
               <div className="absolute inset-0 bg-slate-950/20 group-hover:bg-transparent transition-colors" />
 
               {/* Category pill */}
-              <span className="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-cyan-500 text-slate-950 shadow-md">
+              <span className="absolute top-3 left-3 px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-pink-500 text-slate-950 shadow-md">
                 {item.categoryLabel}
               </span>
 
@@ -109,7 +109,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
             {/* Info */}
             <div className="p-5 space-y-3 flex-1 flex flex-col justify-between">
               <div className="space-y-1.5">
-                <h3 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                <h3 className="text-base font-bold text-white group-hover:text-pink-300 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
@@ -120,10 +120,10 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
               {/* Tags & Author Footer */}
               <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
                 <div className="flex items-center gap-1.5 truncate">
-                  <User className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                  <User className="w-3.5 h-3.5 text-pink-400 shrink-0" />
                   <span className="truncate">{item.author}</span>
                 </div>
-                <span className="text-cyan-400 font-medium text-[11px]">Ampliar ↗</span>
+                <span className="text-pink-400 font-medium text-[11px]">Ampliar ↗</span>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
       </div>
 
       {/* Bottom CTA to Order */}
-      <section className="p-8 rounded-3xl bg-gradient-to-r from-cyan-950/30 via-slate-900 to-slate-900 border border-cyan-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <section className="p-8 rounded-3xl bg-gradient-to-r from-pink-950/30 via-slate-900 to-slate-900 border border-pink-500/30 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="space-y-2 text-center sm:text-left">
           <h3 className="text-xl font-bold text-white font-['Outfit']">
             Gostou dos trabalhos e quer encomendar algo exclusivo?
@@ -143,7 +143,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({
 
         <button
           onClick={() => onOpenOrderModal('design')}
-          className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-cyan-950/40 shrink-0 cursor-pointer"
+          className="px-6 py-3 rounded-xl bg-pink-500 hover:bg-pink-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-pink-950/40 shrink-0 cursor-pointer"
         >
           Fazer um Orçamento
         </button>

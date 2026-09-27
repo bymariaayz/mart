@@ -40,8 +40,8 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
               {/* Creator Badges */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-fuchsia-500/10 border border-fuchsia-500/30 text-fuchsia-300 text-xs font-bold tracking-wide">
-                  <Sparkles className="w-3.5 h-3.5 text-fuchsia-400" />
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-bold tracking-wide">
+                  <Sparkles className="w-3.5 h-3.5 text-purple-400" />
                   <span>Artista Digital & Streamer</span>
                 </div>
 
@@ -54,7 +54,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               {/* Title & Personal Tagline */}
               <div className="space-y-2">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] font-['Outfit']">
-                  Oi, eu sou a <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-pink-300 to-amber-300">Maah's</span>!
+                  Oi, eu sou a <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-300 to-amber-300">Maah's</span>!
                 </h1>
                 <p className="text-xl sm:text-2xl font-bold text-slate-200 font-['Outfit']">
                   Artes Digitais, Design para Lives & Nosso Servidor de Minecraft.
@@ -70,7 +70,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
                 <button
                   onClick={() => onOpenOrderModal('design', 'Comissão Geral com Maah\'s')}
-                  className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-500 hover:from-fuchsia-400 hover:to-rose-400 text-white font-extrabold text-sm shadow-xl shadow-fuchsia-950/50 active:scale-95 transition-all cursor-pointer"
+                  className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-pink-500 via-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 text-white font-extrabold text-sm shadow-xl shadow-pink-950/50 active:scale-95 transition-all cursor-pointer"
                 >
                   <Palette className="w-4 h-4" />
                   <span>Fazer Orçamento de Arte</span>
@@ -80,7 +80,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   onClick={() => onNavigate('portfolio')}
                   className="flex items-center gap-2 px-5 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700/80 font-bold text-sm transition-all cursor-pointer"
                 >
-                  <Image className="w-4 h-4 text-fuchsia-400" />
+                  <Image className="w-4 h-4 text-pink-400" />
                   <span>Ver Meu Portfólio</span>
                 </button>
 
@@ -98,7 +98,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               {/* Creator Trust Perks */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-3 text-xs text-slate-400 font-medium">
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-fuchsia-400" />
+                  <CheckCircle2 className="w-4 h-4 text-purple-400" />
                   Artes 100% Autorais & Vetorizadas
                 </span>
                 <span className="flex items-center gap-1.5">
@@ -106,7 +106,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   Servidor de Minecraft Sem Pay-To-Win
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400" />
+                  <CheckCircle2 className="w-4 h-4 text-purple-400" />
                   Revisões Inclusas nas Comissões
                 </span>
               </div>
@@ -114,22 +114,22 @@ export const HomePage: React.FC<HomePageProps> = ({
 
             {/* Right: Featured Creator Profile Card & Server Live Box */}
             <div className="lg:col-span-5 space-y-4">
-              <div className="p-6 rounded-3xl bg-gradient-to-b from-[#181126] via-[#101424] to-[#0c0f1d] border border-fuchsia-500/25 shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-48 h-48 bg-fuchsia-500/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="p-6 rounded-3xl bg-gradient-to-b from-[#181126] via-[#101424] to-[#0c0f1d] border border-purple-500/25 shadow-2xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
                 
                 <div className="flex items-center gap-4 pb-5 border-b border-slate-800/80">
                   <div className="relative">
                     <img
                       src={SITE_CONFIG.avatarUrl}
                       alt={SITE_CONFIG.creatorName}
-                      className="w-16 h-16 rounded-2xl object-cover ring-2 ring-fuchsia-500/40 shadow-lg"
+                      className="w-16 h-16 rounded-2xl object-cover ring-2 ring-purple-500/40 shadow-lg"
                     />
                     <span className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-slate-900" title="Online no Discord e Criando"></span>
                   </div>
                   <div>
                     <h3 className="text-lg font-black text-white font-['Outfit'] flex items-center gap-2">
                       {SITE_CONFIG.creatorName}
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30">
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30">
                         Artista Oficial
                       </span>
                     </h3>
@@ -148,16 +148,16 @@ export const HomePage: React.FC<HomePageProps> = ({
                   <div className="grid grid-cols-2 gap-2 text-xs">
                     <div 
                       onClick={() => onNavigate('servicos')}
-                      className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-fuchsia-500/40 transition-all cursor-pointer"
+                      className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/40 transition-all cursor-pointer"
                     >
-                      <span className="text-fuchsia-400 font-bold block">🎨 Venda de Artes</span>
+                      <span className="text-purple-400 font-bold block">🎨 Venda de Artes</span>
                       <span className="text-[11px] text-slate-400">Overlays, Emotes, Packs</span>
                     </div>
                     <div 
                       onClick={() => onNavigate('portfolio')}
-                      className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition-all cursor-pointer"
+                      className="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/40 transition-all cursor-pointer"
                     >
-                      <span className="text-cyan-400 font-bold block">🖼️ Portfólio</span>
+                      <span className="text-purple-400 font-bold block">🖼️ Portfólio</span>
                       <span className="text-[11px] text-slate-400">Trabalhos anteriores</span>
                     </div>
                     <div 
@@ -183,7 +183,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     href={SITE_CONFIG.socials.discord}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold text-fuchsia-400 hover:text-fuchsia-300 flex items-center gap-1"
+                    className="font-bold text-pink-400 hover:text-pink-300 flex items-center gap-1"
                   >
                     <span>{SITE_CONFIG.server.discordMemberCount}+ membros</span>
                     <ExternalLink className="w-3 h-3" />
@@ -230,7 +230,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   href={primaryStreamer.channelUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 px-5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs shadow-md transition-all"
+                  className="flex items-center gap-1.5 px-5 py-2 rounded-xl bg-pink-600 hover:bg-pink-500 text-white font-bold text-xs shadow-md transition-all"
                 >
                   <span>Assistir Live da Maah's</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -245,7 +245,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
           <div>
-            <span className="text-xs font-bold text-fuchsia-400 uppercase tracking-wider flex items-center gap-1.5">
+            <span className="text-xs font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
               <Wrench className="w-3.5 h-3.5" />
               Comissões & Serviços
             </span>
@@ -260,7 +260,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           <div className="flex items-center gap-3">
             <button
               onClick={() => onNavigate('servicos')}
-              className="flex items-center gap-1.5 text-xs font-bold text-fuchsia-400 hover:text-fuchsia-300 transition-colors cursor-pointer"
+              className="flex items-center gap-1.5 text-xs font-bold text-pink-400 hover:text-pink-300 transition-colors cursor-pointer"
             >
               <span>Ver Tabela & Detalhes</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -279,10 +279,10 @@ export const HomePage: React.FC<HomePageProps> = ({
             return (
               <div
                 key={serv.id}
-                className="p-6 rounded-2xl bg-[#0f1424]/80 hover:bg-[#12192e] border border-slate-800 hover:border-fuchsia-500/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+                className="p-6 rounded-2xl bg-[#0f1424]/80 hover:bg-[#12192e] border border-slate-800 hover:border-purple-500/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
               >
                 <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-xl bg-fuchsia-500/10 border border-fuchsia-500/20 text-fuchsia-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <IconComponent className="w-6 h-6" />
                   </div>
 
@@ -290,7 +290,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">
                       {serv.categoryLabel}
                     </span>
-                    <h3 className="text-base font-bold text-white group-hover:text-fuchsia-300 transition-colors pt-1">
+                    <h3 className="text-base font-bold text-white group-hover:text-purple-300 transition-colors pt-1">
                       {serv.title}
                     </h3>
                   </div>
@@ -307,7 +307,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                   <button
                     onClick={() => onOpenOrderModal(serv.category, serv.title)}
-                    className="w-full py-2.5 rounded-xl bg-fuchsia-500/15 hover:bg-fuchsia-500 text-fuchsia-300 hover:text-white font-bold text-xs border border-fuchsia-500/30 transition-all cursor-pointer text-center"
+                    className="w-full py-2.5 rounded-xl bg-pink-500/15 hover:bg-pink-500 text-pink-300 hover:text-white font-bold text-xs border border-pink-500/30 transition-all cursor-pointer text-center"
                   >
                     Pedir Orçamento
                   </button>
@@ -318,9 +318,9 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
 
         {/* Quick Commission Banner with Briefing trigger */}
-        <div className="p-6 rounded-3xl bg-gradient-to-r from-[#20102b] via-[#151226] to-[#0c1424] border border-fuchsia-500/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+        <div className="p-6 rounded-3xl bg-gradient-to-r from-[#20102b] via-[#151226] to-[#0c1424] border border-purple-500/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-1 text-center sm:text-left">
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-fuchsia-400 uppercase">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold text-purple-400 uppercase">
               <Flame className="w-3.5 h-3.5" />
               <span>Calculadora & Briefing Imediato</span>
             </div>
@@ -334,7 +334,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
           <button
             onClick={() => onOpenOrderModal('design')}
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-fuchsia-500 to-pink-500 hover:from-fuchsia-400 hover:to-pink-400 text-white font-extrabold text-xs shadow-lg shadow-fuchsia-950/50 active:scale-95 transition-all shrink-0 cursor-pointer"
+            className="px-6 py-3 rounded-xl bg-gradient-to-r from-pink-500 to-pink-500 hover:from-pink-400 hover:to-pink-400 text-white font-extrabold text-xs shadow-lg shadow-pink-950/50 active:scale-95 transition-all shrink-0 cursor-pointer"
           >
             Abrir Calculadora de Orçamento
           </button>
@@ -345,7 +345,7 @@ export const HomePage: React.FC<HomePageProps> = ({
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
           <div>
-            <span className="text-xs font-bold text-cyan-400 uppercase tracking-wider flex items-center gap-1.5">
+            <span className="text-xs font-bold text-purple-400 uppercase tracking-wider flex items-center gap-1.5">
               <Image className="w-3.5 h-3.5" />
               Galeria de Obras
             </span>
@@ -359,7 +359,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
           <button
             onClick={() => onNavigate('portfolio')}
-            className="flex items-center gap-1.5 text-xs font-bold text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 text-xs font-bold text-pink-400 hover:text-pink-300 transition-colors cursor-pointer"
           >
             <span>Ver todas as obras</span>
             <ArrowRight className="w-3.5 h-3.5" />
@@ -372,7 +372,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div
               key={item.id}
               onClick={() => onOpenPortfolioLightbox(item.id)}
-              className="group relative rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 overflow-hidden cursor-pointer transition-all duration-300 shadow-lg"
+              className="group relative rounded-2xl bg-slate-900 border border-slate-800 hover:border-purple-500/40 overflow-hidden cursor-pointer transition-all duration-300 shadow-lg"
             >
               <div className="relative aspect-video w-full overflow-hidden bg-slate-950">
                 <img
@@ -382,19 +382,19 @@ export const HomePage: React.FC<HomePageProps> = ({
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80" />
-                <span className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-semibold bg-cyan-500 text-slate-950 shadow">
+                <span className="absolute top-2.5 left-2.5 px-2 py-0.5 rounded text-[10px] font-semibold bg-purple-500 text-slate-950 shadow">
                   {item.categoryLabel}
                 </span>
               </div>
 
               <div className="p-4 space-y-1">
-                <h4 className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors truncate">
+                <h4 className="text-sm font-bold text-white group-hover:text-purple-300 transition-colors truncate">
                   {item.title}
                 </h4>
                 <p className="text-xs text-slate-400 truncate">{item.description}</p>
                 <div className="pt-2 flex items-center justify-between text-[11px] text-slate-400">
-                  <span className="text-fuchsia-300 font-medium">Por {item.author}</span>
-                  <span className="text-cyan-400 font-medium">Expandir arte →</span>
+                  <span className="text-purple-300 font-medium">Por {item.author}</span>
+                  <span className="text-purple-400 font-medium">Expandir arte →</span>
                 </div>
               </div>
             </div>
@@ -531,7 +531,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
           <button
             onClick={() => onNavigate('noticias')}
-            className="flex items-center gap-1.5 text-xs font-bold text-purple-400 hover:text-purple-300 transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 text-xs font-bold text-pink-400 hover:text-pink-300 transition-colors cursor-pointer"
           >
             <span>Ver todas as publicações</span>
             <ArrowRight className="w-3.5 h-3.5" />

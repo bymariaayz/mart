@@ -21,7 +21,7 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({ onNavigate }) => {
       {/* Hero Discord Hub */}
       <div className="relative rounded-3xl bg-gradient-to-r from-[#171a3d] via-[#10152e] to-[#0d1c29] border border-[#5865F2]/40 p-8 sm:p-12 overflow-hidden shadow-2xl">
         <div className="max-w-3xl space-y-5">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5865F2]/20 border border-[#5865F2]/40 text-indigo-300 text-xs font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5865F2]/20 border border-[#5865F2]/40 text-purple-300 text-xs font-semibold">
             <MessageSquare className="w-3.5 h-3.5" />
             <span>Ponto Central de Encontro & Suporte</span>
           </div>

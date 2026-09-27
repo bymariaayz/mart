@@ -156,7 +156,7 @@ export const NewsPage: React.FC<NewsPageProps> = ({ initialSlug, onNavigate }) =
               onClick={() => setSelectedCategory(cat.id)}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
                 isActive
-                  ? 'bg-purple-600 text-white shadow-md'
+                  ? 'bg-pink-600 text-white shadow-md'
                   : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
               }`}
             >
